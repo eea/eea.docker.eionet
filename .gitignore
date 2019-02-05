@@ -1,0 +1,6 @@
+*.pyc
+.secret
+src
+devel/src/*
+data
+*~
