@@ -13,8 +13,8 @@ services:
       DNS_ENABLED: "True"
 
   plone:
-    # image: eeacms/eea.docker.eionet:latest
-    build: .
+    image: eeacms/eionet
+    # build: .
     depends_on:
     - zeoserver
     environment:
