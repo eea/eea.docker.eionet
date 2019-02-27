@@ -5,7 +5,7 @@ pipeline {
       steps {
         node(label: 'docker') {
           script {
-            sh '''echo Hurray!!!'''
+            sh '''echo Hurray, we did it!!!'''
           }
         }
       }
