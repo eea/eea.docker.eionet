@@ -14,14 +14,10 @@ services:
 
   plone:
     image: eeacms/eionet
-    # build: .
     depends_on:
     - zeoserver
     environment:
     - ZEO_ADDRESS=zeoserver:8080
-    # volumes:
-    # - ./site.cfg:/plone/instance/site.cfg
-    # command: bash -c "tail -f /dev/null"
 
   zeoserver:
     image: plone/plone:5.1.5

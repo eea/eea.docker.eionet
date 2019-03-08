@@ -11,6 +11,9 @@ services:
     ports:
     - "5000:8080"
     command: bash -c "tail -f /dev/null"
+    volumes:
+    - ./site.cfg:/plone/instance/site.cfg
+    command: bash -c "tail -f /dev/null"
 
   zeoserver:
     image: plone/plone:5.1.5
