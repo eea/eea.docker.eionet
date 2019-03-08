@@ -13,6 +13,7 @@ services:
     command: bash -c "tail -f /dev/null"
     volumes:
     - ./site.cfg:/plone/instance/site.cfg
+    - ./src/:/plone/instance/src/
     command: bash -c "tail -f /dev/null"
 
   zeoserver:
