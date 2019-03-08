@@ -2,8 +2,8 @@ version: "2"
 services:
 
   plone:
-    image: eeacms/eionet
-    # build: .
+    # image: eeacms/eionet
+    build: .
     depends_on:
     - zeoserver
     environment:
