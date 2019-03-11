@@ -12,7 +12,7 @@ services:
     - "5000:8080"
     command: bash -c "tail -f /dev/null"
     volumes:
-    - ./site.cfg:/plone/instance/site.cfg
+    - ./custom.cfg:/plone/instance/custom.cfg
     - ./src/:/plone/instance/src/
     command: bash -c "tail -f /dev/null"
 

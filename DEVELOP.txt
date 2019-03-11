@@ -15,7 +15,7 @@ To avoid problems, you should use the ``plone`` user inside the container:
 
   $ su - plone
 
-If you need to change the site.cfg you need to rebuild the image:
+If you need to change the custom.cfg you need to rebuild the image:
 
   # docker-compose -f devel-compose.yml rm plone
   # docker-compose -f devel-compose.yml build plone
