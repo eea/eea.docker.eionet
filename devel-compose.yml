@@ -10,7 +10,6 @@ services:
     - ZEO_ADDRESS=zeoserver:8080
     ports:
     - "5000:8080"
-    command: bash -c "tail -f /dev/null"
     volumes:
     - ./custom.cfg:/plone/instance/custom.cfg
     - ./src/:/plone/instance/src/
