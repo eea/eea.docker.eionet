@@ -1,29 +1,42 @@
 version: "2"
 services:
-  haproxy:
-    image: eeacms/haproxy
-    ports:
-    - 8080:5000
-    - 1936:1936
-    depends_on:
-    - plone
-    environment:
-      BACKENDS: "plone"
-      BACKENDS_PORT: "8080"
-      DNS_ENABLED: "True"
 
-  plone:
-    image: eeacms/eionet
+  shell:
+    build: .
     depends_on:
     - zeoserver
     environment:
     - ZEO_ADDRESS=zeoserver:8080
+    ports:
+    - "5000:8080"
+    volumes:
+    - ./custom.cfg:/plone/instance/custom.cfg
+    - ./src/:/plone/instance/src/
+    command: bash -c "tail -f /dev/null"
 
   zeoserver:
     image: plone/plone:5.1.5
     command: zeo
     volumes:
-    - data:/data
+    - ./data:/data
 
-volumes:
-  data:
+  plone:
+    build: .
+    depends_on:
+    - zeoserver
+    environment:
+    - ZEO_ADDRESS=zeoserver:8080
+    ports:
+    - "5001:8080"
+    volumes:
+    - ./custom.cfg:/plone/instance/custom.cfg
+    - ./src/:/plone/instance/src/
+
+  preproduction:
+    image: eeacms/eionet:latest
+    depends_on:
+    - zeoserver
+    environment:
+    - ZEO_ADDRESS=zeoserver:8080
+    ports:
+    - "5002:8080"
