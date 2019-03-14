@@ -48,5 +48,6 @@ If you do the rebuild, by mistake, as root, you need to fix permissions:
 After that you need to use the docker-initialise.py script to reset the
 configuration file as a zeoclient (by default the config files are created as
 standalone instance):
-
+```
   $ /docker-initialise.py
+```
