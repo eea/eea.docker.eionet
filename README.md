@@ -6,7 +6,7 @@
 
 ## Base docker image
 
- - [hub.docker.com](https://github.com/eea/eea.docker.eionet)
+ - [hub.docker.com](https://hub.docker.com/r/eeacms/eionet)
 
 ## Source code
 
@@ -20,11 +20,11 @@
 
 ## Usage
 
-See [ClimateAdapt Orchestration](https://github.com/eea/eea.docker.climateadapt#usage)
+See [Plone5 Docker image](https://github.com/plone/plone.docker)
 
 ## Upgrade
 
-    $ docker pull eeacms/eea.docker.eionet
+    $ docker pull eeacms/eionet
 
 ## Copyright and license
 
