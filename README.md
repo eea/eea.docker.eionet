@@ -1,7 +1,7 @@
 # Eionet Plone Image (based on https://github.com/plone/plone.docker)
 
 This repository published the Docker image, but it shouldn't be used for
-docker-compose based deployments, only for development. See the `DEVELOP.txt`
+docker-compose based deployments, only for development. See the `DEVELOP.md`
 file for details.
 
 Deployments should be done using
@@ -26,7 +26,7 @@ template from the Rancher Catalog.
 
 2. Install [Docker Compose](https://docs.docker.com/compose/) (optional)
 
-3. See `DEVELOP.txt` for further details.
+3. See `DEVELOP.md` for further details.
 
 ## Usage
 
