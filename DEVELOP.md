@@ -2,14 +2,14 @@
 
 To facilitate development, we have the following services:
 
-  - zeoserver: The regular zeoserver. It needs a data folder created in the
+  - **zeoserver**: The regular zeoserver. It needs a data folder created in the
     current folder checkout, to store filestorage and blobstorage.
     current checkout
-  - plone: This builds the current Dockerfile based image and starts Plone
-  - shell: This is for debugging: it allows manual start of the Plone service
+  - **plone**: This builds the current Dockerfile based image and starts Plone
+  - **shell**: This is for debugging: it allows manual start of the Plone service
     (use the ./enter_devel.sh script to get inside the container, then run
     `bin/instance fg` to start the Zope service)
-  - preproduction: allows testing of published Docker images
+  - **preproduction**: allows testing of published Docker images
 
 Typical workflow is:
 
