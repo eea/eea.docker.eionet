@@ -1,8 +1,10 @@
-# Eionet Plone Image (based on https://github.com/plone/plone.docker)
+# Eionet Plone Docker Image
 
 This repository published the Docker image, but it shouldn't be used for
 docker-compose based deployments, only for development. See the `DEVELOP.md`
 file for details.
+
+Docker Image is based on [official Plone docker image](https://github.com/plone/plone.docker)
 
 Deployments should be done using
 [Eionet - WWW](https://github.com/eea/eea.rancher.catalog/tree/master/templates/www-eionet)
