@@ -11,26 +11,28 @@ To facilitate development, we have the following services:
     `bin/instance fg` to start the Zope service)
   - preproduction: allows testing of published Docker images
 
-
 Typical workflow is:
 
-  - Start the stack:
+### Start the stack:
 
-  `# docker-compose up -d`
+```
+  # docker-compose up -d
+```
 
-Use the shell container to start Plone:
+### Use the shell container to start Plone:
 ```
   # ./enter_devel.sh
 ```
-Inside the Plone container, you can use the instance script to start Zope:
+
+### Inside the Plone container, you can use the instance script to start Zope:
 ```
   $ bin/instance fg
 ```
-To avoid problems, you should use the ``plone`` user inside the container:
+### To avoid problems, you should use the ``plone`` user inside the container:
 ```
   $ su - plone
 ```
-If you need to change the custom.cfg you need to rebuild the image:
+### If you need to change the custom.cfg you need to rebuild the image:
 ```
   # docker-compose -f devel-compose.yml rm plone
   # docker-compose -f devel-compose.yml build plone
