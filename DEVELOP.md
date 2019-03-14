@@ -34,9 +34,9 @@ Typical workflow is:
 ```
 ### If you need to change the custom.cfg you need to rebuild the image:
 ```
-  # docker-compose -f devel-compose.yml rm plone
-  # docker-compose -f devel-compose.yml build plone
-  # docker-compose -f devel-compose.yml up -d plone
+  # docker-compose rm plone
+  # docker-compose build plone
+  # docker-compose up -d plone
   # ./enter_devel.sh
 ```
 Another method is to do the rebuild from inside the container:
