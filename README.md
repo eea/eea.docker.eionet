@@ -1,4 +1,8 @@
-# Eionet Plone Docker Image
+# Deprecated
+
+Look for the PloneSAAS docker image
+
+### Eionet Plone Docker Image
 
 This repository published the Docker image, but it shouldn't be used for
 docker-compose based deployments, only for development. See the `DEVELOP.md`
